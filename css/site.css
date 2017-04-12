@@ -1,0 +1,376 @@
+  body {
+
+
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
+  }
+  
+  h1 {
+	  margin-top: 42px;
+	  font-size: 40px;
+	  font-weight: 300;
+	  color: #279fbb;
+	  font-family: 'Calligraffitti', cursive;
+  }
+  
+  h2 {
+	  margin-top: 20px;
+	  margin-bottom: 20px;
+	  font-size: 32px;
+	  font-weight: 300;
+	  font-family: 'Calligraffitti', cursive;
+  }
+  
+  .btn-primary {
+    background: #279fbb;
+    color: #ffffff;
+	border: 0;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #217f95;
+}
+  
+/* Max size */
+#wrapper {  max-width: 1170px; margin: auto; background-color: #fff; -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.16); -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.16); box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.16);
+}
+  
+  
+  
+/* ------- Top taskbar ------- */
+
+  
+  .toptext{
+	font-family: 'Raleway', sans-serif;
+	background-color: #FBFBFB;
+	border-bottom: 1px solid #E9E9E9;
+	padding: 10px;
+	color: #969696;
+	font-size: 12px;  
+  }
+  
+  .toptext a {
+	color: #969696;
+  }
+  
+  .toptext a:hover {
+	color: #279fbb;
+	text-decoration: none;
+  }
+  
+  .toptext i {
+  	font-size: 24px;
+	margin-left: 15px;
+	margin-right: 5px;
+  }
+  
+  .topsocial {
+	display:flex;
+	align-items:center;
+	float:right;
+ }
+ 
+ .topcontact {
+	display:flex;
+	align-items:center;
+	float:left;
+ }
+  
+  
+/* ------- Carousel ------- */
+  
+ /* Carousel base class */
+
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  overflow:hidden;
+}
+
+
+/* Content */
+.topcontent {
+	background-color: #FBFBFB;
+	border-bottom: 1px solid #E9E9E9;
+	padding-top: 20px;
+}
+
+
+/* ----- Media queries ----- */
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+	
+	.carousel { height: 200px; }
+	.carousel .item { height: 200px; }
+	
+	.navigation > li > a { padding-right: 14px; }
+	
+	
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+	.carousel { height: 200px; }
+	.carousel .item { height: 200px; }
+	
+	.navigation > li > a { padding-right: 10px; }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+	.carousel { height: 300px; }
+	.carousel .item { height: 300px; }
+	
+	
+	.navigation > li > a { padding-right: 10px; }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+	.carousel { height: 350px; }
+	.carousel .item { height: 350px; }
+	
+	.navigation > li > a { padding-right: 14px; }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+	.carousel { height: 500px; }
+	.carousel .item { height: 500px; }
+	.carousel-caption h1 { font-size: 65px;margin:10px;}
+
+	.navigation > li > a { padding-right: 14px; }
+}
+
+
+
+
+  /*
+Navigation
+*/
+.navbar {
+		margin-bottom:0px !important;
+}
+
+.navbar-brand {
+	display:flex;
+	align-items:center;
+	height: 80px;
+
+}
+.navbar-brand img{
+margin-right: 10px;
+}
+
+
+/* Nav Config */
+.navigation { 
+	float: right; padding: 0 0 0 0; margin: 0; list-style-type: none;
+} 
+.navigation > li { 
+	float: left; margin-right: 30px;
+} 
+.navigation > li:last-child { 
+	margin-right: 0;
+} 
+
+/* First Level Styling */
+.navigation > li > a { 
+	color: #898989; 
+	text-transform: uppercase; 
+	font-family: "Raleway", sans-serif; 
+	font-size: 14px; 
+	text-decoration: none; 
+	height: 80px; 
+	display: inline-block; 
+	position: relative; 
+
+	-webkit-perspective: 1000px; 
+	-moz-perspective: 1000px; 
+	-ms-perspective: 1000px; 
+	perspective: 1000px; 
+	color: #2a2a2a;
+	
+} 
+
+.navigation > li:hover > a, .navigation > li > a:hover, .navigation > li > .activelink { 
+	color: #279fbb;
+} 
+
+.navigation > li > a > span.label-nav { 
+	float: left; 
+	line-height: 20px; 
+	display: block; 
+	width: 100%; 
+	clear: both; 
+	margin: 25px 0 0 0;
+} 
+
+.navigation > li > a > span.label-nav-sub { 
+	float: left; 
+	line-height: 20px; 
+	width: 100%; 
+	clear: both; 
+	font-size: 12px; 
+	color: #bcbcbc; 
+	display: inline-block; 
+	position: relative; 
+	-webkit-transition: -webkit-transform 0.3s; 
+	-moz-transition: -moz-transform 0.3s; 
+	transition: transform 0.3s; 
+	-webkit-transform-origin: 50% 0; 
+	-moz-transform-origin: 50% 0; 
+	-ms-transform-origin: 50% 0; 
+	-o-transform-origin: 50% 0; 
+	transform-origin: 50% 0; 
+	-webkit-transform-style: preserve-3d; 
+	-moz-transform-style: preserve-3d; 
+	-ms-transform-style: preserve-3d; 
+	-o-transform-style: preserve-3d; 
+	transform-style: preserve-3d; 
+	-webkit-perspective: 1000px; 
+	-moz-perspective: 1000px; 
+	-ms-perspective: 1000px; 
+	perspective: 1000px; 
+	text-transform: capitalize;
+} 
+
+.navigation > li > a > span.label-nav-sub::before { 
+	position: absolute; 
+	top: 100%; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+	content: attr(data-hover); 
+	-webkit-transition: opacity 0.3s; 
+	-moz-transition: opacity 0.3s; 
+	transition: opacity 0.3s; 
+	-webkit-transform: rotateX(-90deg); 
+	-moz-transform: rotateX(-90deg); 
+	-ms-transform: rotateX(-90deg); 
+	transform: rotateX(-90deg); 
+	-webkit-transform-origin: 50% 0; 
+	-moz-transform-origin: 50% 0; 
+	-ms-transform-origin: 50% 0; 
+	-o-transform-origin: 50% 0; 
+	transform-origin: 50% 0; 
+	opacity: 0;
+} 
+
+.navigation > li:hover > a > span.label-nav-sub, .navigation > li:hover > a > span.label-nav-sub { 
+	-webkit-transform: rotateX(90deg) translateY(-22px); 
+	-moz-transform: rotateX(90deg) translateY(-22px); 
+	-ms-transform: rotateX(90deg) translateY(-22px); 
+	-o-transform: rotateX(90deg) translateY(-22px); 
+	transform: rotateX(90deg) translateY(-22px); 
+	-ms-transform: none;
+} 
+
+.ie10 .navigation > li:hover > a > span.label-nav-sub, .ie10 .navigation > li:hover > a > span.label-nav-sub { 
+	transform: none;
+} 
+
+.navigation > li:hover > a > span.label-nav-sub::before, .navigation > li:hover > a > span.label-nav-sub::before { 
+	color: #279FBB; 
+	opacity: 1; 
+	opacity: 0\9;
+} 
+
+.navigation > li > .activelink span.label-nav-sub { 
+	color: #585858;
+} 
+
+.navigation > li:last-child > a { 
+	margin-right: 0; 
+	padding-right: 0;
+} 
+
+/* set all LI to relative */
+.navigation li { position: relative; }
+
+  
+  
+            /* Navigation */
+            .navigation > li:hover > a,.navigation > li > a:hover,
+            .navigation > li > .activelink,.navigation > li:hover > a > i, .navigation > li > a:hover > span.label-nav-sub::before, .navigation > li > a:focus > span.label-nav-sub::before{
+            color: {{skin_color}};
+            }
+            .mobile-menu-button, .mobile-nav, .slider-fixed-container{   
+            background-color: {{skin_color}};    
+            }
+
+            .navigation > li > a:after, .navigation>li>.activelink:after{
+            background-color: {{skin_color}};
+            }
+            .navigation>li:hover > a > span.label-nav-sub::before,.navigation>li:hover> a > span.label-nav-sub::before{
+            color: {{skin_color}};
+            }
+			
+			
+			
+/* ----- Footer ----- */
+.footer { 
+	overflow: hidden; position: relative; z-index: 0; padding: 0; background-color: #383838;
+} 
+
+
+.footer .footer-col .footer-title { 
+	padding: 0 0 8px 0; margin: 20px 0 10px 0; color: #f2f2f2; font-size:24px; font-family: 'Calligraffitti', cursive;
+} 
+
+.footer .footer-col .footer-content { 
+	color: #d4d4d4; line-height: 22px; padding-bottom: 0px; 
+}
+
+
+.footer .footer-col .footer-content a { color: #C9C9C9; text-decoration: none;
+}
+
+.footer .footer-col .footer-content li a { 
+	color: #f8f8f8;
+}
+
+
+.footer .copyright { height: 40px; width: 100%; font-size: 11px; background-color: #303030;
+}
+
+.footer .footer-col .footer-content .footer-category-list { list-style-type: none; padding-left: 0; color: #C9C9C9;
+} .footer .footer-col .footer-content .footer-category-list li { padding: 6px 0; position: relative; border-bottom: 1px solid #414141;
+} .footer .footer-col .footer-content .footer-category-list li:first-child { padding-top: 0;
+} .footer .footer-col .footer-content .footer-category-list li a { text-decoration: none;
+} .footer .footer-col .footer-content .footer-category-list li a:hover { color: #f8f8f8;
+}
+
+
+.footer-wrapper { position: relative; padding-top: 25px; padding-bottom: 35px;
+} 
+
+
+
+
+
+
+
+
+
+
